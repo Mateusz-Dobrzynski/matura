@@ -15,10 +15,12 @@ treściami zadań.
 2.3
 Wypisz największą z liczb zapisanych w pliku bin.txt
 '''
-inputFile = open('bin.txt', 'r')
+inputFile = open('bin.txt')
 lines = inputFile.readlines()
 biggestNumber = 0
 for line in lines:
-    if int(line) > biggestNumber:
-        biggestNumber = int(line)
+    line = int(line.rstrip('\n'))
+    if line > biggestNumber:
+        biggestNumber = line
 print(biggestNumber)
+inputFile = open('bin.txt', 'r')

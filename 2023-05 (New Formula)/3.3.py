@@ -1,11 +1,11 @@
 """
+EN:
+State how many ascending-declining sequences composed of exactly six
+consecutive digits are stored in the file pi.txt.
+
 PL:
 Podaj, ile jest wszystkich rosnąco-malejących ciągów złożonych z dokładnie sześciu
 kolejnych cyfr zapisanych w pliku pi.txt.
-
-ENG:
-State how many ascending-declining sequences composed of exactly six
-consecutive digits are stored in the file pi.txt.
 """
 
 file = open('Data/pi.txt')
