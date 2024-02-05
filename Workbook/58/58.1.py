@@ -66,6 +66,6 @@ minimalTemperatures = [findMinimum(convertFileToDecimal(r"dane_systemy1.txt", 2)
                        findMinimum(convertFileToDecimal(r"dane_systemy3.txt", 8))]
 
 outputFile = open('wyniki_systemy.txt', mode="a", encoding="utf-8")
-outputFile.write('Zadanie 1. / Task 1')
+outputFile.write('Zadanie 1. / Task 1\n')
 for i in range(len(minimalTemperatures)):
     outputFile.write(f"Station/Stacja {i}: {minimalTemperatures[i]}\n")
