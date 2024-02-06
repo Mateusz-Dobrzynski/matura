@@ -217,6 +217,7 @@ def mostRealFollowers(followersEntries: list) -> str:
 assert len(getDistinctAccountsList(dataExample)) == 5
 assert getSecondUsername('slodkie_koty iskierka15') == 'iskierka15'
 
+# Tests on exemplary data
 assert countAccounts(dataExample) == 5
 assert getFakeAccounts(dataExample) == ['puszek_the_best_cat']
 assert followingEachOther(dataExample) == 1
@@ -234,3 +235,10 @@ print(f'4.2: {getFakeAccounts(lines)}')
 print(f'4.3: {followingEachOther(lines)}')
 print(f'4.4: {followingMostAccounts(lines)}')
 print(f'4.5: {mostRealFollowers(lines)}')
+
+# Tests on the text file
+assert countAccounts(lines) == 32
+assert getFakeAccounts(lines) == ['Koci_Klimat9', 'MiskaPelnaPrzysmakow', 'Rybenka2', 'SkrzydlateSzalenstwa', 'Zefirek23', 'iskierka15', 'wole_psy123']
+assert followingEachOther(lines) == 43 or followingMostAccounts(lines) == 79
+assert followingMostAccounts(lines) == 'mruczek_i_mucha'
+assert mostRealFollowers(lines) == 'ZwierzakowySwiat'

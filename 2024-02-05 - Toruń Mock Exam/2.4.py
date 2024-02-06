@@ -45,3 +45,5 @@ for k in range(len(lines) - 1, 1, -1):
         ksFulfillingCondition.append(k)
 
 print(ksFulfillingCondition)
+
+assert ksFulfillingCondition == [37, 74, 77, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
