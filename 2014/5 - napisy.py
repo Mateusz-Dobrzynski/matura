@@ -10,8 +10,8 @@ For example, the sum of ASCII codes in the ABB inscription is 197 and is a prime
 
 which means that the ABB string is a prime string. State how many strings are prime in the file NAPIS.TXT.
 b) An ascending string is a string in which the ASCII code of each successive letter is greater
-
 than the code of the previous one. List all ascending strings occurring in the file NAPIS.TXT.
+
 c) List the ascending strings in the file NAPIS.TXT that occur more than once in the file
 (print each such string only once).
 
@@ -34,7 +34,6 @@ od kodu poprzedniej. Podaj wszystkie napisy rosnące występujące w pliku NAPIS
 c) Wypisz napisy z pliku NAPIS.TXT, które występują w nim więcej niż jeden raz (każdy
 taki napis wypisz tylko raz).
 """
-
 
 
 import math
@@ -89,6 +88,7 @@ def countPrimeWords(file: str) -> int:
 
 
 print(f'5.1: {countPrimeWords("NAPIS.TXT")}')
+assert countPrimeWords("NAPIS.TXT") == 122
 
 
 def isWordAscending(word: str) -> bool:
@@ -98,16 +98,18 @@ def isWordAscending(word: str) -> bool:
     return True
 
 
-def countAscendingWords(file: str) -> int:
-    ascendingWordsCount = 0
+def findAscendingWords(file: str) -> int:
+    ascendingWords = []
     lines = getLinesList(file)
     for line in lines:
         if isWordAscending(line):
-            ascendingWordsCount += 1
-    return ascendingWordsCount
+            ascendingWords.append(line)
+    return ascendingWords
 
 
-print(f'5.2: {countAscendingWords("NAPIS.TXT")}')
+print(f'5.2: {findAscendingWords("NAPIS.TXT")}')
+assert findAscendingWords("NAPIS.TXT") == ['FHJLMU', 'BEJNOSY', 'MNS', 'AEIOUY', 'BDL', 'JT', 'BJQR',
+                                           'AHJS', 'FHJLMU', 'DIT', 'CEGKZ', 'BCV', 'CEGIKOT', 'CEGKZ']
 
 
 def findDuplicateWords(file: str) -> list:
@@ -124,3 +126,4 @@ def findDuplicateWords(file: str) -> list:
 
 
 print(f'5.3: {findDuplicateWords("NAPIS.TXT")}')
+assert findDuplicateWords("NAPIS.TXT") == ['GC', 'FHJLMU', 'BZYFFLOICLUNWLTH', 'CEGKZ', 'SWIFT', 'QULA']
