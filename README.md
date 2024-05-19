@@ -4,7 +4,7 @@ The practical part of the exam consists of three parts, one of them being progra
 Since the other two revolve around MS Excel and Access, they are not included in this repository.
 
 ## Repository structure
-- `YYYY-MM` – solutions of tasks present in exam sheets from previous years:
+- `sheets` – solutions of tasks present in exam sheets from previous years:
   - [An official list of exam sheets (2015 formula and newer)](https://www.oke.poznan.pl/cms,108,arkusze.htm?p=0)
   - [Older exam sheets](https://www.oke.poznan.pl/cms,548,arkusze.htm)
   - _[arkusze.pl](https://arkusze.pl/informatyka-matura-poziom-rozszerzony/)_ – a comprehensive list of all exam sheets from a given subject

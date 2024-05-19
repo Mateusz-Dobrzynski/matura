@@ -1,4 +1,4 @@
-def insertionSort(list: list) -> list:
+def insertionSort(list: list[int]) -> list[int]:
     i = 1
     while i < len(list):
         j = i

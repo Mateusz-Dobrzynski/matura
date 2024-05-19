@@ -1,4 +1,0 @@
-Zadanie 1. / Task 1
-Station/Stacja 0: -1011
-Station/Stacja 1: -1001100
-Station/Stacja 2: -1001011

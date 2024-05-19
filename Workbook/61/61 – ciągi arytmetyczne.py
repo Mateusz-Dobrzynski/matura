@@ -179,4 +179,3 @@ print(f'Task 61.3\n'
       f'Errors:')
 for sequence in erroneousSequences:
     print(findError(sequence))
-
